@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code_scheme name="Stanfy-Code-Style">
+  <option name="OTHER_INDENT_OPTIONS">
+    <value>
+      <option name="INDENT_SIZE" value="3" />
+      <option name="CONTINUATION_INDENT_SIZE" value="8" />
+      <option name="TAB_SIZE" value="3" />
+      <option name="USE_TAB_CHARACTER" value="false" />
+      <option name="SMART_TABS" value="false" />
+      <option name="LABEL_INDENT_SIZE" value="0" />
+      <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+      <option name="USE_RELATIVE_INDENTS" value="false" />
+    </value>
+  </option>
+  <Objective-C>
+    <option name="INDENT_NAMESPACE_MEMBERS" value="3" />
+    <option name="METHOD_CALL_ARGUMENTS_WRAP" value="5" />
+    <option name="SPACE_BEFORE_PROTOCOLS_BRACKETS" value="false" />
+    <option name="SPACE_AFTER_POINTER_IN_DECLARATION" value="true" />
+    <option name="SHOW_OPTIONAL_METHODS_IN_IMPLEMENT" value="false" />
+    <option name="SHOW_SYNTHESIZED_ACCESSORS" value="true" />
+    <option name="INTRODUCE_GENERATE_SYNTHESIZE" value="false" />
+  </Objective-C>
+  <Objective-C-extensions>
+    <option name="GENERATE_INSTANCE_VARIABLES_FOR_PROPERTIES" value="ASK" />
+    <option name="RELEASE_STYLE" value="PROPERTY" />
+    <file>
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Import" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Macro" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Typedef" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Struct" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Enum" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="ClassPredef" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Constant" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Global" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="FunctionPredecl" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Function" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Class" />
+    </file>
+    <class>
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Property" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="Synthesize" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="InitMethod" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="StaticMethod" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="InstanceMethod" />
+      <option name="com.jetbrains.objc.lang.OCDeclarationKind" value="DeallocMethod" />
+    </class>
+  </Objective-C-extensions>
+  <XML>
+    <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+  </XML>
+  <codeStyleSettings language="JavaScript">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="ObjectiveC">
+    <option name="BLANK_LINES_BEFORE_IMPORTS" value="0" />
+    <option name="BLANK_LINES_AFTER_IMPORTS" value="0" />
+    <option name="BLANK_LINES_AROUND_CLASS" value="2" />
+    <option name="BLANK_LINES_AROUND_METHOD" value="2" />
+    <option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
+    <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+    <indentOptions>
+      <option name="INDENT_SIZE" value="3" />
+      <option name="CONTINUATION_INDENT_SIZE" value="1" />
+      <option name="TAB_SIZE" value="3" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
+

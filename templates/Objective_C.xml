@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Objective-C">
+  <template name="swf" value="[NSString stringWithFormat:@&quot;$END$&quot;]" description="String with format" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+    </context>
+  </template>
+  <template name="addtarget" value="[$TYPE$ addTarget:self action:@selector($SELECTOR$) forControlEvents:UIControlEventTouchUpInside];" description="Adds target tobutton" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="variableOfType(&quot;UIControl&quot;)" defaultValue="&quot;button&quot;" alwaysStopAt="true" />
+    <variable name="SELECTOR" expression="&quot;pressed:&quot;" defaultValue="pressed:" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+    </context>
+  </template>
+  <template name="buttbi" value="[$BUTTON$ setBackgroundImage:[UIImage imageNamed:@&quot;$NAME$&quot;] forState:UIControlStateNormal];&#10;[$BUTTON$ setBackgroundImage:[UIImage imageNamed:@&quot;$NAME$-highlighted&quot;] forState:UIControlStateHighlighted];&#10;[$BUTTON$ setBackgroundImage:[UIImage imageNamed:@&quot;$NAME$-selected&quot;] forState:UIControlStateSelected];&#10;" description="Button background image" toReformat="false" toShortenFQNames="true">
+    <variable name="BUTTON" expression="variableOfType(&quot;UIButton&quot;)" defaultValue="&quot;button&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;button&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+    </context>
+  </template>
+  <template name="imgw" value="UIImageView * $IMAGENAME$ = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@&quot;$NAME$&quot;]];&#10;" description="Image view with image named" toReformat="false" toShortenFQNames="true">
+    <variable name="IMAGENAME" expression="" defaultValue="&quot;imageView&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;image&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+    </context>
+  </template>
+  <template name="imgws" value="UIImageView * $IMAGENAME$ = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@&quot;$NAME$&quot;] stretchableImageWithLeftCapWidth:$LEFT$ topCapHeight:$TOP$]];&#10;" description="Image view with strerchable image" toReformat="false" toShortenFQNames="true">
+    <variable name="IMAGENAME" expression="" defaultValue="&quot;imageView&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;image&quot;" alwaysStopAt="true" />
+    <variable name="LEFT" expression="" defaultValue="0" alwaysStopAt="true" />
+    <variable name="TOP" expression="" defaultValue="0" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+    </context>
+  </template>
+  <template name="for" value="for (int $INDEX$ = 0; $COPY_INDEX$ &lt; $UPPER_BOUND$; $COPY_INDEX$++) {&#10;$END$&#10;}" description="Indexed for(;;) loop" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="COPY_INDEX" expression="INDEX" defaultValue="" alwaysStopAt="false" />
+    <variable name="UPPER_BOUND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+    </context>
+  </template>
+  <template name="md" value="NSMutableDictionary * $DICTIONARYNAME$ = [NSMutableDictionary dictionary];" description="Mutable Dictionary" toReformat="false" toShortenFQNames="true">
+    <variable name="DICTIONARYNAME" expression="" defaultValue="dictionary" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="dma" value="NSMutableArray * $MA$ = [NSMutableArray array];" description="Mutable Array creation" toReformat="false" toShortenFQNames="true">
+    <variable name="MA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ma" value="[NSMutableArray array]" description="Mutable array as array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="props" value="@property (nonatomic, strong) $DECLARATION$;$END$" description="@property (strong)" toReformat="true" toShortenFQNames="true">
+    <variable name="DECLARATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+    </context>
+  </template>
+  <template name="l" value="NSLog(@&quot;$SELECTION$ = %@&quot;, $SELECTION$);" description="Wrapping selection with nsLog" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
