@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Cedar">
+  <template name="ccont" value="context(@&quot;$SUBJECT$&quot;, ^{&#10;    $END$&#10;});" description="Cedar Context" toReformat="false" toShortenFQNames="true">
+    <variable name="SUBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="cit" value="it(@&quot;should $STRING$&quot;, ^{&#10;    $END$&#10;});" description="Cedar IT" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="cbef" value="beforeEach(^{&#10;    $END$&#10;});" description="Cedar Before each" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="caft" value="afterEach(^{&#10;    $END$&#10;});" description="Cedar After each" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="cdesc" value="describe(@&quot;$SUBJECT$&quot;, ^{&#10;    $END$&#10;});" description="Cedar Describe" toReformat="false" toShortenFQNames="true">
+    <variable name="SUBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
