@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Injections">
+  <template name="inject" value="#pragma mark - Injection&#10;&#10;- (void)updateOnClassInjection {&#10;  $END$  &#10;}&#10;" description="Class Injection" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

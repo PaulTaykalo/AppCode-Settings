@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="Cedar">
-  <template name="ccont" value="context(@&quot;$SUBJECT$&quot;, ^{&#10;    $END$&#10;});" description="Cedar Context" toReformat="false" toShortenFQNames="true">
-    <variable name="SUBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+<templateSet group="user">
+  <template name="asyncm" value="dispatch_async(dispatch_get_main_queue(), ^{&#10;   $END$&#10;});&#10;" description="Dispatch async in main queue" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -19,8 +18,28 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="cit" value="it(@&quot;should $STRING$&quot;, ^{&#10;    $END$&#10;});" description="Cedar IT" toReformat="false" toShortenFQNames="true">
-    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="dealloc" value="#pragma mark - Dealloc&#10;&#10;- (void)dealloc {&#10;   $END$&#10;}&#10;" description="dealloc" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="sh" value="$CLASS$ * $CLASS2$ = [$CLASS$ $sharedName$];" description="Shared instance" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="guessElementType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="sharedName" expression="" defaultValue="&quot;sharedInstance&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -38,7 +57,29 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="cbef" value="beforeEach(^{&#10;    $END$&#10;});" description="Cedar Before each" toReformat="false" toShortenFQNames="true">
+  <template name="idef" value="$CLASS$ * $_variable$;" description="Ivar definition" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="_variable" expression="suggestVariableName(CLASS)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="asynca" value="dispatch_after(dispatch_time(DISPATCH_TIME_NOW, $SECONDS$ * NSEC_PER_SEC), $QUEUE$, ^{&#10;  $END$&#10;});" description="Dispatch async after timeout" toReformat="true" toShortenFQNames="true">
+    <variable name="SECONDS" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="QUEUE" expression="" defaultValue="&quot;dispatch_get_current_queue()&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -56,7 +97,8 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="caft" value="afterEach(^{&#10;    $END$&#10;});" description="Cedar After each" toReformat="false" toShortenFQNames="true">
+  <template name="ws" value="__weak $CLASSNAME$ * weakSelf = self;" description="weak self" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="fileNameWithoutExtension()" alwaysStopAt="false" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -74,144 +116,18 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="cdesc" value="describe(@&quot;$SUBJECT$&quot;, ^{&#10;    $END$&#10;});" description="Cedar Describe" toReformat="false" toShortenFQNames="true">
-    <variable name="SUBJECT" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="false" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shnn" value="should_not be_nil;" description="Should not be nil" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shbn" value="should be_nil;" description="should be nil" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shbe" value="should be_empty;" description="Should be empty" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shne" value="should_not be_empty;" description="Should not be empty" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shbt" value="should be_truthy;" description="Should be truthy" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="shnt" value="should_not be_truthy;" description="Should not be truthy" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="objc" value="true" />
-      <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="sheq" value="should equal($CURSOR$);&#10;$END$" description="Should equal" toReformat="false" toShortenFQNames="true">
+  <template name="once" value="static dispatch_once_t $ONCE$;&#10;dispatch_once(&amp;$ONCE$, ^{&#10;   $CURSOR$&#10;});" description="Dispatch once" toReformat="false" toShortenFQNames="true">
+    <variable name="ONCE" expression="" defaultValue="&quot;once&quot;" alwaysStopAt="false" />
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="objc" value="true" />
+      <option name="objc" value="false" />
       <option name="OC_DECLARATION" value="false" />
       <option name="OC_STATEMENT" value="true" />
-      <option name="OC_EXPRESSION" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
@@ -220,17 +136,16 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="shhr" value="should have_received(@selector($SELECTOR$));" description="Should have received" toReformat="false" toShortenFQNames="true">
-    <variable name="SELECTOR" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  <template name="async" value="dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{&#10;    $END$&#10;});" description="Async in backgound queue" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="objc" value="true" />
+      <option name="objc" value="false" />
       <option name="OC_DECLARATION" value="false" />
-      <option name="OC_STATEMENT" value="false" />
-      <option name="OC_EXPRESSION" value="true" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
@@ -239,16 +154,37 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="shco" value="should contain($END$);" description="should contain" toReformat="false" toShortenFQNames="true">
+  <template name="button" value="UIButton * $BUTTONNAME$ = [UIButton new];" description="Simple UIbutton" toReformat="false" toShortenFQNames="true">
+    <variable name="BUTTONNAME" expression="" defaultValue="&quot;button&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="objc" value="true" />
+      <option name="objc" value="false" />
       <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="test" value="-(void)test$TESTNAME$ {&#10;   $CURSOR$&#10;}" description="testExample" toReformat="false" toShortenFQNames="true">
+    <variable name="TESTNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
       <option name="OC_STATEMENT" value="false" />
-      <option name="OC_EXPRESSION" value="true" />
+      <option name="OC_EXPRESSION" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
